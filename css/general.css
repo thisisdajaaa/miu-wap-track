@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% === 10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-inline: auto;
+  padding-inline: 3.6rem;
+  padding-block: 2.4rem;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-cover {
+  display: block;
+  height: 36rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-avatar {
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 100%;
+  object-fit: cover;
+  bottom: -6rem;
+  left: 4rem;
+  border: 0.4rem solid aliceblue;
+}
+
+.main-content {
+  flex: 1 1 0%;
+  overflow-x: auto;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.profile-content {
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  max-width: 89.6rem;
+  overflow: hidden;
+}
+
+.assignment-list {
+  margin-top: 2.4rem;
+}
