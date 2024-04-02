@@ -1,3 +1,8 @@
+/*
+  Sizing System
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +25,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: rgb(250, 246, 246);
 }
 
 footer {
@@ -30,28 +36,6 @@ footer {
   padding-block: 2.4rem;
 }
 
-.img-container {
-  position: relative;
-}
-
-.img-cover {
-  display: block;
-  height: 36rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.img-avatar {
-  position: absolute;
-  height: 18rem;
-  width: 18rem;
-  border-radius: 100%;
-  object-fit: cover;
-  bottom: -6rem;
-  left: 4rem;
-  border: 0.4rem solid aliceblue;
-}
-
 .main-content {
   flex: 1 1 0%;
   overflow-x: auto;
@@ -60,14 +44,41 @@ footer {
   transition-duration: 200ms;
 }
 
-.profile-content {
-  margin-inline: auto;
-  margin-top: 8rem;
-  margin-bottom: 4rem;
+.container {
+  margin: 4rem auto;
   max-width: 89.6rem;
   overflow: hidden;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  padding: 3.2rem 2.4rem;
+  min-height: 80rem;
 }
 
-.assignment-list {
-  margin-top: 2.4rem;
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.table {
+  position: relative;
+  width: 100%;
+  border-radius: 1.6rem;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.table tr th {
+  background-color: #f3f4f6;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem 1.6rem;
+}
+
+/* Hover effect */
+.table tr:hover {
+  cursor: pointer;
+  background-color: #e5e7eb;
 }

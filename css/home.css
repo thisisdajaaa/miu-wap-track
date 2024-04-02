@@ -1,0 +1,51 @@
+.home-container {
+  padding-top: 0;
+  padding-inline: 0;
+
+  .img-container {
+    position: relative;
+  }
+
+  .img-cover {
+    display: block;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .img-avatar {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .img-avatar-container {
+    position: absolute;
+    border-radius: 100%;
+    bottom: -6rem;
+    left: 4rem;
+    border: 0.4rem solid aliceblue;
+    overflow: hidden;
+  }
+
+  .img-avatar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .profile-content {
+    margin-inline: auto;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding-inline: 3.2rem;
+    max-width: 89.6rem;
+    overflow: hidden;
+  }
+
+  .assignment-list {
+    margin-top: 2.4rem;
+    list-style: none;
+  }
+}

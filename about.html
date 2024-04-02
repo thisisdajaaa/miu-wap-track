@@ -4,9 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styleMe.css" />
+    <script defer src="./js/aboutMe.js"></script>
   </head>
   <body>
-    <h1>About me DAJA</h1>
-    <a href="./index.html">Click</a>
+    <main class="container">
+      <section class="section-introduction">
+        <h1>About DAJA</h1>
+
+        <p>
+          Hello! I'm Dann Anthony Astillero, currently a
+          <strong>Full Stack Developer (MERN)</strong> with a robust background
+          in both front-end and back-end development. My journey in the tech
+          industry has led me through various roles, where I've honed my skills
+          in React.js, React Native, Node.js, Express.js, MongoDB, TypeScript,
+          and more.
+        </p>
+      </section>
+
+      <section class="section-tabs">
+        <div role="tablist" class="tabs">
+          <a
+            role="tab"
+            class="tab tab-active"
+            onclick="openTab(event, 'classes')"
+            >Classes This Quarter</a
+          >
+          <a role="tab" class="tab" onclick="openTab(event, 'movies')"
+            >Favorite Movies</a
+          >
+          <a role="tab" class="tab" onclick="openTab(event, 'moods')"
+            >My Moods</a
+          >
+          <a role="tab" class="tab" onclick="openTab(event, 'neighbor')"
+            >My Neighbor</a
+          >
+        </div>
+
+        <div id="classes" class="tab-content">
+          <div class="overflow-x-auto">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Course ID</th>
+                  <th>Course Name</th>
+                  <th>Faculty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>CS401</td>
+                  <td>Modern Programming Practices</td>
+                  <td>Obinna Kalu</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>CS472</td>
+                  <td>Web Programming</td>
+                  <td>Ankhtuya Ochirbat</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>CS422</td>
+                  <td>Database Management Systems</td>
+                  <td>Tacettin Umur Inan</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>CS545</td>
+                  <td>Web Application Architecture</td>
+                  <td>Muhyieddin Khaled Al-Tarawneh</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>CS544</td>
+                  <td>Enterprise Architecture</td>
+                  <td>Rene de Jong</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="movies" class="tab-content">
+          <div class="movie-list">
+            <div class="card">
+              <figure>
+                <img
+                  src="./assets/images/movie-harry-potter.jpg"
+                  alt="Harry Potter"
+                />
+              </figure>
+
+              <div class="card-body">
+                <h2 class="card-title">Harry Potter</h2>
+                <div class="imdb-rating">7.6/10 ★</div>
+                <p>
+                  Harry Potter is a series of seven fantasy novels written by
+                  British author J. K. Rowling. The novels chronicle the lives
+                  of a young wizard, Harry Potter, and his friends Hermione
+                  Granger and Ron Weasley, all of whom are students at Hogwarts
+                  School of Witchcraft and Wizardry.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img
+                  src="./assets/images/movie-lord-of-the-rings.jpg"
+                  alt="Lord of the Rings"
+                />
+              </figure>
+
+              <div class="card-body">
+                <h2 class="card-title">Lord of the Rings</h2>
+                <div class="imdb-rating">8.7/10 ★</div>
+                <p>
+                  The Lord of the Rings is a trilogy of epic fantasy adventure
+                  films directed by Peter Jackson, based on the novel The Lord
+                  of the Rings by British author J. R. R. Tolkien. The films are
+                  subtitled The Fellowship of the Ring, The Two Towers, and The
+                  Return of the King.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img
+                  src="./assets/images/movie-fast-and-furious.jpg"
+                  alt="Fast and Furious"
+                />
+              </figure>
+
+              <div class="card-body">
+                <h2 class="card-title">Fast and Furious</h2>
+                <div class="imdb-rating">6.5/10 ★</div>
+                <p>
+                  Fast & Furious, also known as The Fast and the Furious, is an
+                  American media franchise centered on a series of action films
+                  that are largely concerned with street racing, heists, spies,
+                  and family. The franchise also includes short films, a
+                  television series, toys, video games, live shows, and theme
+                  park attractions.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img
+                  src="./assets/images/movie-rush-hour.jpg"
+                  alt="Rush Hour"
+                />
+              </figure>
+
+              <div class="card-body">
+                <h2 class="card-title">Rush Hour</h2>
+                <div class="imdb-rating">7/10 ★</div>
+                <p>
+                  When a Chinese diplomat's daughter is kidnapped in Los
+                  Angeles, he calls in Hong Kong Detective Inspector Lee (Jackie
+                  Chan) to assist the FBI with the case. But the FBI doesn't
+                  want anything to do with Lee, and they dump him off on the
+                  LAPD, who assign wisecracking Detective James Carter (Chris
+                  Tucker) to watch over him. Although Lee and Carter can't stand
+                  each other, they choose to work together to solve the case on
+                  their own when they figure out they've been ditched by both
+                  the FBI and police.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="moods" class="tab-content">
+          <div class="mood-list">
+            <div class="mood">
+              <h3>Stressed</h3>
+
+              <iframe
+                src="https://giphy.com/embed/1FMaabePDEfgk"
+                width="420"
+                height="444"
+                frameborder="0"
+                class="giphy-embed"
+              ></iframe>
+            </div>
+
+            <div class="mood">
+              <h3>Focused</h3>
+
+              <iframe
+                src="https://giphy.com/embed/7MDZS8zS1ixtJAUEul"
+                width="420"
+                height="444"
+                frameborder="0"
+                class="giphy-embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="neighbor" class="tab-content">
+          <ul>
+            <li>Also from the Philippines (Same as me)</li>
+            <li>Genius</li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
