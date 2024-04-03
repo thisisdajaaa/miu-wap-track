@@ -205,11 +205,16 @@
 
 @media screen and (max-width: 44em) {
   #movies .movie-list,
+  #moods .mood-list,
   #neighbor .neighbor-details {
     grid-template-columns: 1fr;
   }
 
   #neighbor .neighbor-details .facts-content {
     margin-left: 0;
+  }
+
+  #moods .mood-list .mood {
+    gap: 1.6rem;
   }
 }
