@@ -10,6 +10,10 @@
     font-size: 1.6rem;
     line-height: 1.8;
     letter-spacing: 0.75px;
+
+    &::first-letter {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -26,6 +30,7 @@
       border: none;
       outline: none;
       cursor: pointer;
+      text-align: center;
       font-size: 1.6rem;
       font-weight: 600;
       padding: 1.4rem 1.6rem;
@@ -82,6 +87,10 @@
           & p {
             font-size: 1.4rem;
             color: #333;
+
+            &::first-letter {
+              font-size: 1.8rem;
+            }
           }
         }
 
@@ -90,11 +99,31 @@
           margin-bottom: 0.8rem;
         }
 
-        .imdb-rating {
-          font-size: 1.4rem;
-          font-weight: bold;
-          color: #f5c518;
+        .info-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           margin-bottom: 1.6rem;
+
+          .imdb-rating {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #f5c518;
+          }
+
+          dl {
+            display: flex;
+            background-color: #333;
+            color: #fff;
+            gap: 1.2rem;
+            padding: 1.4rem 1.8rem;
+            width: fit-content;
+            border-radius: 2.4rem;
+
+            dt {
+              font-weight: bold;
+            }
+          }
         }
       }
     }
@@ -176,6 +205,24 @@
               font-size: 1.6rem;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 44em) {
+  .section-tabs {
+    #movies > .movie-list,
+    #neighbor > .neighbor-details {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    #neighbor {
+      .neighbor-details {
+        .facts-content {
+          margin-left: 0;
         }
       }
     }
