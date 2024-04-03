@@ -29,11 +29,15 @@ body {
 }
 
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
-  margin-inline: auto;
   padding-inline: 3.6rem;
   padding-block: 2.4rem;
+
+  .validator-container {
+    display: flex;
+    gap: 2.4rem;
+  }
 }
 
 .main-content {
@@ -77,8 +81,49 @@ footer {
   padding: 1.2rem 1.6rem;
 }
 
-/* Hover effect */
+.table tr {
+  transition: background-color 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .table tr:hover {
   cursor: pointer;
+
   background-color: #e5e7eb;
+}
+
+.btn-back {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1.6rem;
+
+  &:hover {
+    color: #454444;
+  }
+
+  &::before {
+    content: "\2190";
+    margin-right: 0.8rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0%;
+    height: 0.1rem;
+    background: #454444;
+    transition: width 0.3s ease-out;
+    transform-origin: right;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transform-origin: left;
+  }
 }
