@@ -4,38 +4,56 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  & > .left-nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+nav .left-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-    img {
-      height: 4.2rem;
-    }
+nav .left-nav img {
+  height: 4.2rem;
+}
 
-    h1::before {
-      content: "";
-      border-left: 0.15rem solid #555;
-      margin-right: 1rem;
-    }
+nav .left-nav h1::before {
+  content: "";
+  border-left: 0.15rem solid #555;
+  margin-right: 1rem;
+}
 
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 500;
-      color: rgb(124, 124, 124);
-    }
-  }
+nav .left-nav h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+}
 
-  & > .right-nav {
-    display: flex;
-    gap: 1.8rem;
+nav .right-nav {
+  display: flex;
+  gap: 1.8rem;
+}
 
-    a {
-      font-size: 1.4rem;
-      color: rgb(118, 118, 118);
-    }
-  }
+nav .right-nav a {
+  font-size: 1.4rem;
+  color: rgb(118, 118, 118);
+  position: relative;
+}
+
+nav .right-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  width: 0%;
+  height: 0.1rem;
+  background: #454444;
+  transition: width 0.3s ease-out;
+  transform-origin: right;
+}
+
+nav .right-nav a:hover::after {
+  width: 100%;
+  transform-origin: left;
 }
 
 main {
@@ -48,116 +66,218 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  h2 {
-    font-size: 4rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    color: #fff;
-  }
+.section-welcome h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  text-align: center;
 }
 
 .section-login {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2.8rem 3.6rem;
+  padding-block: 4.8rem;
+  max-width: 1160px;
+  margin-inline: auto;
+}
 
-  .login-container {
-    padding: 3.2rem 9.6rem;
-    width: 70%;
+.section-login .login-content {
+  position: relative;
+}
 
-    h3 {
-      font-size: 3.2rem;
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 2rem;
-    }
+.section-login .login-content .login-container {
+  padding: 3.2rem 1.6rem;
+  width: 70%;
+}
 
-    p {
-      font-size: 1.4rem;
-      color: rgb(188, 174, 176);
-      margin-bottom: 2rem;
-    }
+.section-login .login-content .login-container h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+}
 
-    .img-azure {
-      height: 2.8rem;
-    }
+.section-login .login-content .login-container p {
+  font-size: 1.4rem;
+  color: rgb(188, 174, 176);
+  margin-bottom: 2rem;
+}
 
-    .separator {
-      margin-block: 2.8rem;
-      display: flex;
-      align-items: center;
-      text-align: center;
+.section-login .login-content .login-container .img-azure {
+  height: 2.8rem;
+}
 
-      &::before,
-      &::after {
-        content: "";
-        flex: 1;
-        border-bottom: 1px solid #e3e3e3;
-      }
+.section-login .login-content .login-container .separator {
+  margin-block: 2.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
-      &:not(:empty)::before {
-        margin-right: 1.2rem;
-      }
+.section-login .login-content .login-container .separator::before,
+.section-login .login-content .login-container .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e3e3e3;
+}
 
-      &:not(:empty)::after {
-        margin-left: 1.2rem;
-      }
+.section-login .login-content .login-container .separator:not(:empty)::before {
+  margin-right: 1.2rem;
+}
 
-      span {
-        color: rgb(188, 174, 176);
-        font-size: 1.2rem;
-      }
-    }
+.section-login .login-content .login-container .separator:not(:empty)::after {
+  margin-left: 1.2rem;
+}
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.4rem;
+.section-login .login-content .login-container .separator span {
+  color: rgb(188, 174, 176);
+  font-size: 1.2rem;
+}
 
-      .field-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
+.section-login .login-content .login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
 
-        label {
-          font-size: 1.6rem;
-          font-weight: 400;
-          color: rgb(159, 152, 153);
-        }
-      }
+.section-login .login-content .login-container form .field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
 
-      .login-actions-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.section-login .login-content .login-container form .field-container label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(159, 152, 153);
+}
 
-        a {
-          color: #62acde;
-          font-size: 1.4rem;
-        }
-      }
+.section-login .login-content .login-container form .login-actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      .field-checkbox-container {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        cursor: pointer;
+.section-login .login-content .login-container form .login-actions-container a {
+  color: #62acde;
+  font-size: 1.4rem;
+}
 
-        input,
-        label {
-          cursor: pointer;
-        }
+.section-login .login-content .login-container form .field-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
 
-        label {
-          font-size: 1.4rem;
-          color: rgb(159, 152, 153);
-        }
-      }
-    }
-  }
+.section-login
+  .login-content
+  .login-container
+  form
+  .field-checkbox-container
+  input,
+.section-login
+  .login-content
+  .login-container
+  form
+  .field-checkbox-container
+  label {
+  cursor: pointer;
+}
+
+.section-login
+  .login-content
+  .login-container
+  form
+  .field-checkbox-container
+  label {
+  font-size: 1.4rem;
+  color: rgb(159, 152, 153);
+}
+
+.section-login .login-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.1rem;
+  background-color: #dcdcdc;
+}
+
+.section-login .info-content {
+  padding: 3.2rem 6.8rem 3.2rem 10rem;
+}
+
+.section-login .info-content p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.section-login .info-content p span a {
+  color: #62acde;
+  font-weight: 500;
+}
+
+.section-login .info-content button {
+  width: fit-content;
+  height: 3.6rem;
+  padding-inline: 2rem;
+}
+
+.section-login .mobile-separator {
+  display: none;
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #e6e6e6;
+  padding: 1.8rem 2.2rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: rgb(188, 174, 176);
+}
+
+@media screen and (max-width: 59em) {
+  .section-login .login-content .login-container {
+    width: 90%;
+    padding-block: 1.6rem;
+  }
+
+  .section-login .info-content {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 44em) {
+  .section-login {
+    grid-template-columns: 1fr;
+  }
+
+  .section-login .login-content .login-container {
+    padding: 0 1.6rem;
+    width: 100%;
+  }
+
+  .section-login .info-content {
+    padding: 0 1.6rem;
+  }
+
+  .section-login .mobile-separator {
+    padding: 1.6rem;
+    display: block;
+  }
+
+  .section-login .mobile-separator hr {
+    border-top: 1px solid #dcdcdc;
+  }
 }

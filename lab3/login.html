@@ -11,91 +11,120 @@
     <header>
       <nav>
         <div class="left-nav">
-          <img src="../assets/images/miu-logo.png" alt="MIU Logo" />
+          <a href="../index.html"
+            ><img src="../assets/images/miu-logo.png" alt="MIU Logo"
+          /></a>
 
           <h1>Maharishi University IT Dept</h1>
         </div>
 
         <div class="right-nav">
-          <a href="#">Agent Portal</a>
-          <a href="#">Submit Ticket</a>
-          <a href="#">Knowledge Base</a>
-          <a href="#">Login</a>
+          <a href="../index.html">Agent Portal</a>
+          <a href="../index.html">Submit Ticket</a>
+          <a href="../index.html">Knowledge Base</a>
+          <a href="../index.html">Login</a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="main-content">
       <section class="section-welcome">
         <h2>Welcome to our Support Center</h2>
       </section>
 
       <section class="section-login">
-        <div class="login-container">
-          <h3>Login</h3>
+        <div class="login-content">
+          <div class="login-container">
+            <h3>Login</h3>
 
-          <p>Login to know the status of the ticket</p>
+            <p>Login to know the status of the ticket</p>
 
-          <button class="btn btn-primary">
-            <img
-              src="../assets/images/azure-logo.png"
-              alt="Azure logo"
-              class="img-azure"
-            />
-          </button>
-
-          <div class="separator"><span>or login using </span></div>
-
-          <form>
-            <div class="field-container">
-              <label for="identifier">Username or Email</label>
-              <input
-                id="identifier"
-                type="text"
-                placeholder="Enter email"
-                class="form-input"
-                required
+            <button class="btn btn-primary">
+              <img
+                src="../assets/images/azure-logo.png"
+                alt="Azure logo"
+                class="img-azure"
               />
-            </div>
+            </button>
 
-            <div class="field-container">
-              <label for="password">Password</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="Enter password"
-                class="form-input"
-                required
-              />
-            </div>
+            <div class="separator"><span>or login using </span></div>
 
-            <div class="login-actions-container">
-              <div class="field-checkbox-container">
-                <input type="checkbox" id="remember" value="isRemembered" />
-                <label for="remember">Remember me</label>
+            <form>
+              <div class="field-container">
+                <label for="identifier">Username or Email</label>
+                <input
+                  id="identifier"
+                  type="text"
+                  placeholder="Enter email"
+                  class="form-input"
+                  required
+                />
               </div>
 
-              <a href="#">Forgot password?</a>
-            </div>
+              <div class="field-container">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter password"
+                  class="form-input"
+                  required
+                />
+              </div>
 
-            <button class="btn btn-secondary">Login</button>
-          </form>
+              <div class="login-actions-container">
+                <div class="field-checkbox-container">
+                  <input type="checkbox" id="remember" value="isRemembered" />
+                  <label for="remember">Remember me</label>
+                </div>
+
+                <a href="../index.html">Forgot password?</a>
+              </div>
+
+              <button class="btn btn-secondary">Login</button>
+            </form>
+          </div>
         </div>
 
-        <div class="info-container">
+        <div class="mobile-separator">
+          <hr />
+        </div>
+
+        <div class="info-content">
           <p>
             Login to track your existing support requests. If you have not
             created a ticket yet then you would need to
-            <span><a href="#">register</a></span> or
-            <span><a href="#">create a new ticket</a></span> to begin
+            <span><a href="../index.html">register</a></span> or
+            <span><a href="../index.html">create a new ticket</a></span> to
+            begin.
           </p>
 
-          <button>Submit ticket</button>
+          <button class="btn btn-secondary">Submit ticket</button>
         </div>
       </section>
     </main>
 
     <footer>
+      <div class="validator-container">
+        <a
+          href="https://validator.w3.org/check?url=https://thisisdajaaa.github.io/miu-wap-track/lab3/login.html"
+        >
+          <img
+            src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png"
+            alt="Validate"
+          />
+        </a>
+
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://thisisdajaaa.github.io/miu-wap-track/lab3/login.html"
+        >
+          <img
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Validate"
+          />
+        </a>
+      </div>
+
       <p>Copyright 2020. All rights reserved</p>
     </footer>
   </body>
