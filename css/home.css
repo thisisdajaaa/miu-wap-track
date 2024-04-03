@@ -1,94 +1,94 @@
 .home-container {
   padding-top: 0;
   padding-inline: 0;
+}
 
-  .img-container {
-    position: relative;
-  }
+.img-container {
+  position: relative;
+}
 
-  .img-cover {
-    display: block;
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-  }
+.img-cover {
+  display: block;
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
 
-  .img-avatar {
-    height: 16rem;
-    width: 16rem;
-    border-radius: 100%;
-    object-fit: cover;
-    transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
+.img-avatar {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-  .img-avatar-container {
-    position: absolute;
-    border-radius: 100%;
-    bottom: -6rem;
-    left: 4rem;
-    border: 0.4rem solid aliceblue;
-    overflow: hidden;
-  }
+.img-avatar-container {
+  position: absolute;
+  border-radius: 100%;
+  bottom: -6rem;
+  left: 4rem;
+  border: 0.4rem solid aliceblue;
+  overflow: hidden;
+}
 
-  .img-avatar:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
+.img-avatar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
-  .profile-content {
-    margin-inline: auto;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-    padding-inline: 3.2rem;
-    max-width: 89.6rem;
-    overflow: hidden;
-  }
+.profile-content {
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  padding-inline: 3.2rem;
+  max-width: 89.6rem;
+  overflow: hidden;
+}
 
-  .profile-content h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2;
-    text-transform: capitalize;
-  }
+.profile-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: capitalize;
+}
 
-  .assignment-list {
-    margin-top: 2.4rem;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-  }
+.assignment-list {
+  margin-top: 2.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
 
-  .assignment-list li {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #333;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 0.5rem;
-    padding: 2.4rem 1rem;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
+.assignment-list li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  padding: 2.4rem 1rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-  .assignment-list li a {
-    text-decoration: none;
-    color: #555;
-    width: 100%;
-  }
+.assignment-list li a {
+  text-decoration: none;
+  color: #555;
+  width: 100%;
+}
 
-  .assignment-list li a::after {
-    content: "\2192";
-    position: absolute;
-    top: 40%;
-    right: 1.2rem;
-  }
+.assignment-list li a::after {
+  content: "\2192";
+  position: absolute;
+  top: 40%;
+  right: 1.2rem;
+}
 
-  .assignment-list li:hover {
-    background-color: #f7f3f3;
-  }
+.assignment-list li:hover {
+  background-color: #f7f3f3;
 }
