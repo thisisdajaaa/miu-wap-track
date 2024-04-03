@@ -76,18 +76,18 @@
           text-decoration: none;
           color: #555;
           width: 100%;
-
-          &::after {
-            content: "\2192";
-            position: absolute;
-            top: 40%;
-            right: 1.2rem;
-          }
         }
 
-        &:hover {
-          background-color: #f7f3f3;
+        a::after {
+          content: "\2192";
+          position: absolute;
+          top: 40%;
+          right: 1.2rem;
         }
+      }
+
+      li:hover {
+        background-color: #f7f3f3;
       }
     }
   }
