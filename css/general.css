@@ -33,11 +33,11 @@ footer {
   bottom: 0;
   padding-inline: 3.6rem;
   padding-block: 2.4rem;
+}
 
-  .validator-container {
-    display: flex;
-    gap: 2.4rem;
-  }
+.validator-container {
+  display: flex;
+  gap: 2.4rem;
 }
 
 .main-content {
@@ -87,7 +87,6 @@ footer {
 
 .table tr:hover {
   cursor: pointer;
-
   background-color: #e5e7eb;
 }
 
