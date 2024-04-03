@@ -100,30 +100,30 @@ footer {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 1.6rem;
+}
 
-  &:hover {
-    color: #454444;
-  }
+.btn-back:hover {
+  color: #454444;
+}
 
-  &::before {
-    content: "\2190";
-    margin-right: 0.8rem;
-  }
+.btn-back::before {
+  content: "\2190";
+  margin-right: 0.8rem;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.2rem;
-    width: 0%;
-    height: 0.1rem;
-    background: #454444;
-    transition: width 0.3s ease-out;
-    transform-origin: right;
-  }
+.btn-back::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0%;
+  height: 0.1rem;
+  background: #454444;
+  transition: width 0.3s ease-out;
+  transform-origin: right;
+}
 
-  &:hover::after {
-    width: 100%;
-    transform-origin: left;
-  }
+.btn-back:hover::after {
+  width: 100%;
+  transform-origin: left;
 }
