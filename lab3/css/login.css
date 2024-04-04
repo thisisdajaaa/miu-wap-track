@@ -259,6 +259,15 @@ footer p {
 }
 
 @media screen and (max-width: 44em) {
+  nav .left-nav h1::before {
+    border: 0;
+    margin: 0;
+  }
+
+  .section-welcome h2 {
+    font-size: 2.8rem;
+  }
+
   .section-login {
     grid-template-columns: 1fr;
   }
@@ -279,5 +288,17 @@ footer p {
 
   .section-login .mobile-separator hr {
     border-top: 1px solid #dcdcdc;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  nav .right-nav {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
   }
 }
