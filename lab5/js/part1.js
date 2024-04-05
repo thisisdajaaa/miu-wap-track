@@ -14,15 +14,7 @@ const largestOfThree = (...rest) => {
     return;
   }
 
-  let largest = rest[0];
-
-  rest.forEach((item) => {
-    if (largest < item) {
-      largest = item;
-    }
-  });
-
-  return largest;
+  return rest.reduce((acc, curr) => (acc < curr ? curr : acc), rest[0]);
 };
 
 const isVowel = (character) => {
@@ -51,7 +43,7 @@ const numListTestData = [1, 2, 3, 4];
 
 console.log(max(6, 2));
 console.log(largestOfThree(6, 2, 9));
-console.log(isVowel(1));
+console.log(isVowel("A"));
 console.log(sums(numListTestData));
 console.log(multiplies(numListTestData));
 console.log(reverse("jag testar"));
