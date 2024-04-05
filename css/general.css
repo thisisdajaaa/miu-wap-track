@@ -180,6 +180,39 @@ a {
   background-color: rgb(225, 225, 230);
 }
 
+.btn-outline-primary {
+  border: 0.1rem solid rgb(48, 164, 232);
+  background-color: #fff;
+  color: rgb(48, 164, 232);
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: rgb(48, 164, 232);
+}
+
+.btn-outline-secondary {
+  border: 0.1rem solid rgb(4, 60, 115);
+  background-color: #fff;
+  color: rgb(4, 60, 115);
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: rgb(4, 60, 115);
+}
+
+.btn-outline-tertiary {
+  border: 0.1rem solid rgb(227, 114, 56);
+  background-color: #fff;
+  color: rgb(227, 114, 56);
+}
+
+.btn-outline-tertiary:hover {
+  color: #fff;
+  background-color: rgb(227, 114, 56);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -261,6 +294,11 @@ form .field-container .field-label {
 .form-select-secondary::placeholder {
   color: rgb(131, 123, 113);
   font-size: 1.6rem;
+}
+
+.form-error-message {
+  font-size: 1.4rem;
+  color: rgb(138, 153, 169);
 }
 
 .bg-white {

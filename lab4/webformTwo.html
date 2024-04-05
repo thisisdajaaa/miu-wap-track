@@ -10,7 +10,9 @@
     <header>
       <nav>
         <div class="left-nav">
-          <p>MUM Golden Dome Market <span>:::</span> SRM System</p>
+          <a href="../index.html">
+            <p>MUM Golden Dome Market <span>:::</span> SRM System</p></a
+          >
 
           <div class="nav-links">
             <a href="" class="link-products">Products</a>
@@ -28,9 +30,9 @@
 
     <main class="main-content bg-white">
       <section class="section-product-form">
-        <h1>New Production Form</h1>
+        <h1>New Product Form</h1>
 
-        <form action="./webformTwo.html" class="product-form">
+        <form action="../index.html" class="product-form">
           <div class="field-container">
             <label for="productNum" class="field-label field-label-secondary"
               >Product Number</label
@@ -111,9 +113,21 @@
               class="form-input form-input-secondary"
               required
             />
+
+            <span class="form-error-message">Enter a valid Date.</span>
           </div>
 
-          <button class="btn btn-tertiary" type="submit">Submit</button>
+          <div class="action-container">
+            <button class="btn btn-outline-secondary" type="submit">
+              Reset
+            </button>
+            <button class="btn btn-outline-tertiary" type="submit">
+              Cancel
+            </button>
+            <button class="btn btn-outline-primary" type="submit">
+              Submit
+            </button>
+          </div>
         </form>
       </section>
     </main>
