@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webform Two</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="./css/webformTwo.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <p>MUM Golden Dome Market <span>:::</span> SRM System</p>
+
+          <div class="nav-links">
+            <a href="" class="link-products">Products</a>
+            <a href="">Suppliers</a>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <p>Hello!</p>
+
+          <button class="btn btn-gray">Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content bg-white">
+      <section class="section-product-form">
+        <h1>New Production Form</h1>
+
+        <form action="./webformTwo.html" class="product-form">
+          <div class="field-container">
+            <label for="productNum" class="field-label field-label-secondary"
+              >Product Number</label
+            >
+            <input
+              id="productNum"
+              type="text"
+              placeholder="Enter Product Number"
+              class="form-input form-input-secondary"
+              required
+            />
+          </div>
+
+          <div class="field-container">
+            <label for="quantity" class="field-label field-label-secondary"
+              >Quantity in stock</label
+            >
+            <input
+              id="quantity"
+              type="number"
+              placeholder="Enter Quantity"
+              class="form-input form-input-secondary"
+              required
+            />
+          </div>
+
+          <div class="field-container">
+            <label for="name" class="field-label field-label-secondary"
+              >Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter Name"
+              class="form-input form-input-secondary"
+              required
+            />
+          </div>
+
+          <div class="field-container">
+            <label for="supplier" class="field-label field-label-secondary"
+              >Supplier</label
+            >
+            <select
+              name="supplier"
+              id="supplier"
+              class="form-select form-select-secondary"
+            >
+              <option value="" disabled selected>Select a supplier</option>
+              <option value="walmart">Walmart</option>
+              <option value="hy-vee">Hy-Vee</option>
+            </select>
+          </div>
+
+          <div class="field-container">
+            <label for="unitPrice" class="field-label field-label-secondary"
+              >Unit Price</label
+            >
+            <input
+              id="unitPrice"
+              type="number"
+              placeholder="Enter Unit Price"
+              class="form-input form-input-secondary"
+              step="0.1"
+              value="0.0"
+              required
+            />
+          </div>
+
+          <div class="field-container">
+            <label for="dateSupplied" class="field-label field-label-secondary"
+              >Date Supplied</label
+            >
+            <input
+              id="dateSupplied"
+              type="date"
+              placeholder="yyyy-mm-dd"
+              class="form-input form-input-secondary"
+              required
+            />
+          </div>
+
+          <button class="btn btn-tertiary" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webform One</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="./css/webformOne.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <a href="../index.html"
+            ><img src="../assets/images/miu-logo.png" alt="MIU Logo"
+          /></a>
+
+          <h1>Maharishi University IT Dept</h1>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <section class="section-registration">
+          <h2>Registration</h2>
+          <form action="./webformTwo.html">
+            <div class="field-container">
+              <label for="websiteURL" class="field-label field-label-secondary"
+                >Website URL</label
+              >
+              <input
+                id="websiteURL"
+                type="text"
+                placeholder="Enter Website URL"
+                class="form-input form-input-secondary"
+                pattern="(http:https):/\/\"
+                required
+              />
+            </div>
+
+            <div class="field-container">
+              <label for="firstName" class="field-label field-label-secondary"
+                >First Name</label
+              >
+              <input
+                id="firstName"
+                type="text"
+                placeholder="Enter First Name"
+                class="form-input form-input-secondary"
+                pattern="[A-Z].*"
+                minlength="2"
+                required
+              />
+            </div>
+
+            <div class="field-container">
+              <label for="email" class="field-label field-label-secondary"
+                >Email Address</label
+              >
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Email"
+                class="form-input form-input-secondary"
+                required
+              />
+            </div>
+
+            <div class="field-container">
+              <label for="password" class="field-label field-label-secondary"
+                >Password</label
+              >
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter Password"
+                class="form-input form-input-secondary"
+                minlength="10"
+                required
+              />
+            </div>
+
+            <button class="btn btn-tertiary" type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
