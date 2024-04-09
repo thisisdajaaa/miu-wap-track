@@ -14,7 +14,23 @@ let user = {
   },
 };
 
+// wrapper
 askPassword(
   () => user.loginOk(),
   () => user.loginFail()
+);
+
+// // bind
+askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+
+// apply
+askPassword(
+  () => user.loginOk.apply(user),
+  () => user.loginFail.apply(user)
+);
+
+// call
+askPassword(
+  () => user.loginOk.call(user),
+  () => user.loginFail.call(user)
 );
