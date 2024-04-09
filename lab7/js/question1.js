@@ -15,6 +15,6 @@ let user = {
 };
 
 askPassword(
-  () => user.loginOk.apply(user),
-  () => user.loginFail.apply(user)
+  () => user.loginOk(),
+  () => user.loginFail()
 );
