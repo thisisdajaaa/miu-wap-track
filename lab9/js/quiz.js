@@ -64,9 +64,7 @@ class Quiz {
     student?.getAnswers()?.forEach((item) => {
       const studentQuestionID = item?.getQID();
       const studentAnswer = item?.getAnswer();
-
       const foundQuestion = this.#questions?.get(studentQuestionID);
-
       const isCorrect = foundQuestion?.checkAnswer(studentAnswer);
 
       if (isCorrect) score++;
