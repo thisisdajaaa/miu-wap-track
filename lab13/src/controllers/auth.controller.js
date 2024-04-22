@@ -34,7 +34,7 @@ const logout = (req, res, next) => {
   req.logout(function (err) {
     if (err) return next(err);
 
-    res.status(200).send("Logout successful.");
+    res.status(STATUS_CODES.OK).send("Logout successful.");
   });
 };
 
