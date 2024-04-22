@@ -26,12 +26,15 @@ class Student {
     return deletedStudent;
   }
   static update(id, updatedFields) {
-    const index = students.findIndex((student) => student.id === +id);
+    const index = students.findIndex((student) => student.id === Number(id));
 
-    if (index != -1) students[index] = { ...students[index], ...updatedFields };
-
-    return students[index];
+    if (index !== -1) {
+      students[index] = { ...students[index], ...updatedFields };
+      return students[index];
+    }
+    return null;
   }
+
   create() {
     let student = students.find((s) => s.id == this.id);
     if (!student) {

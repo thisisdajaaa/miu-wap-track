@@ -84,7 +84,6 @@ let studentController = {
     }
   },
   createStudent: (req, res) => {
-    console.log(req.body);
     let { id, name, program } = req.body;
     if (id && name && program) {
       let student = new Student(id, name, program);
@@ -102,9 +101,8 @@ let studentController = {
     const { id } = req.params;
 
     const updatedStudent = Student.update(id, req.body);
-    console.log("updatedStudent: ", updatedStudent);
 
-    res.status(200).json({ data: updatedStudent });
+    res.status(200).json(updatedStudent);
   },
 };
 
