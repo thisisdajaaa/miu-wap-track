@@ -34,16 +34,36 @@ let studentController = {
     const students = Student.getAllStudents();
     let result = [...students];
 
-    if (req.query.filter) {
-      const filterFields = req.query.filter.split(",");
+    if (req.query.select) {
+      const selectedFields = req.query.select.split(",");
       result = result.map((student) => {
-        return filterFields.reduce((obj, field) => {
+        return selectedFields.reduce((obj, field) => {
           if (student.hasOwnProperty(field)) {
             obj[field] = student[field];
           }
           return obj;
         }, {});
       });
+    }
+
+    console.log("result: ", result);
+
+    if (req.query.filter) {
+      const filterFields = req.query.filter.split(",");
+      result = result
+        .map((student) => {
+          let obj = {};
+
+          filterFields.forEach((item) => {
+            const [key, value] = item.split(":");
+
+            if (student[key].toString().includes(value.toString()))
+              obj = student;
+          });
+
+          return obj;
+        })
+        .filter((item) => !!Object.keys(item).length);
     }
 
     if (req.query.sort) {
