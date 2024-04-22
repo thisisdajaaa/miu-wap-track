@@ -46,8 +46,6 @@ let studentController = {
       });
     }
 
-    console.log("result: ", result);
-
     if (req.query.filter) {
       const filterFields = req.query.filter.split(",");
       result = result
